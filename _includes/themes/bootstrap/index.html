@@ -43,12 +43,12 @@
           <div class="inner cover">
             <img src="/assets/photos/portrait.jpg" alt="Matt Petrie" class="img-circle img-responsive center-block" id="portrait">
             {{ content }}
+            <p><a href="matilto:{{ site.author.email}}">email</a> | <a href="https://github.com/{{ site.author.github }}">GitHub</a> | <a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a></p>
           </div>
 
           <div class="mastfoot">
             <div class="inner">
               <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
-              <p><a href="matilto:{{ site.author.email}}">email</a> | <a href="https://github.com/{{ site.author.github }}">GitHub</a> | <a href="https://twitter.com/{{ site.author.twitter }}">Twitter</a></p>
             </div>
           </div>
 
