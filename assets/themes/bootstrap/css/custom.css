@@ -8,7 +8,9 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-  	background-image: url(/assets/photos/binding_light.png);
+  	/*background-image: url(/assets/photos/binding_light.png)*/;
+  	background-color: #4a525a;
+  	color: #eee;
 }
 
 .lead {
@@ -28,7 +30,7 @@ h1, h2, h3 {
 }
 
 #front-blog h3 a {
-	color: #444;
+	color: #eee;
 }
 
 #front-blog h3 a:hover {
@@ -51,7 +53,7 @@ h1, h2, h3 {
   padding: 10px;
   font-family: 'Source Code Pro', sans-serif;
   font-weight: 600;
-  color: #333;
+  color: #eee;
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
@@ -66,7 +68,7 @@ h1, h2, h3 {
 }
 
 .blog-post-title a {
-	color: #333;
+	color: #eee;
 }
 
 .blog-post-title a:hover {
