@@ -9,20 +9,30 @@ body {
 	font-weight: 400;
 	font-size: 16px;
   	/*background-image: url(/assets/photos/binding_light.png)*/;
-  	background-color: #2A2C4D;
+  	background-color: #243947;
   	color: #eee;
+}
+
+pre {
+	background-color: #333;
+	border: 1px solid #444;
+}
+
+code {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 600;
 }
 
 .lead {
 	font-weight: 400;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: 'Source Code Pro', sans-serif;
 	font-weight: 600;
 }
 
 #main-intro{
-	padding: 120px 15px;
+	padding: 10% 15px;
 }
 
 .hello {
@@ -79,6 +89,33 @@ h1, h2, h3 {
 .portrait-small {
 	height: 100px;
 	width: 100px;
+}
+
+.pagination li a{
+	background-color: #243947;
+	color: #eee;
+	border: none;
+}
+
+.pagination li a:hover {
+	background-color: #243947;
+	color: #fff;
+}
+
+.pagination .disabled a{
+	background-color: #243947;
+	color: #666;
+}
+
+.pagination .disabled a:hover{
+	background-color: #243947;
+}
+
+.tag-list li {
+	list-style-type: none;
+	display: inline;
+	font-family: 'Source Code Pro', sans-serif;
+	font-size: 12px;
 }
 
 /* Footer */

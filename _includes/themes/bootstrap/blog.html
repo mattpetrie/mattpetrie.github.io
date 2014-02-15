@@ -10,6 +10,15 @@
         {{ post.content }}
 
       </div><!-- /.blog-post -->
+
+      {% unless post.tags == empty %}
+      <ul class="tag-list">
+      <li class="text-muted">Tags: </li>
+      {% assign tags_list = post.tags %}
+      {% include JB/tags_list %}
+      </ul>
+      {% endunless %}
+
       <hr>
       {% endfor %}
       
