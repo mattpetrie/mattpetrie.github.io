@@ -13,6 +13,15 @@ body {
   	color: #eee;
 }
 
+a { 
+	color: #B7976F;	
+}
+
+a:hover {
+	color: #65A687;
+	text-decoration: none;
+}
+
 pre {
 	background-color: #333;
 	border: 1px solid #444;
@@ -37,6 +46,16 @@ h1, h2, h3, h4 {
 
 .hello {
 	font-size: 400%;
+	color: #7792A3;
+}
+
+.contact-icons {
+	opacity: 0.85;
+	padding: 0 5px;
+}
+
+.contact-icons:hover {
+	opacity: 1;
 }
 
 #front-blog h3 a {
@@ -44,7 +63,7 @@ h1, h2, h3, h4 {
 }
 
 #front-blog h3 a:hover {
-	color: #428bca;
+	color: #65A687;
   	text-decoration: none;
 }
 
@@ -67,7 +86,7 @@ h1, h2, h3, h4 {
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
-  color: #428bca;
+  color: #65A687;
   text-decoration: none;
 }
 
@@ -82,7 +101,7 @@ h1, h2, h3, h4 {
 }
 
 .blog-post-title a:hover {
-	color: #428bca;
+	color: #65A687;
   	text-decoration: none;
 }
 

@@ -1,0 +1,21 @@
+<div class="row">
+
+  {{ content }}
+
+    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+      <div class="sidebar-module sidebar-module-inset">
+        <h3>About</h3>
+        <img src="/assets/images/portrait.jpg" alt="Matt Petrie" class="img-circle img-responsive portrait-small">
+        <p>My name is Matt Petrie. I am an aspiring web developer. I will be attending <a href="http://appacademy.io">App Academy</a> in San Francisco beginning in March. Find out what I'm up to here.</p>
+        <p><a href="matilto:{{ site.author.email}}"><img src="/assets/images/somicro_icons/email.png" alt="email" class="contact-icons"></a> | <a href="https://github.com/{{ site.author.github }}"><img src="/assets/images/somicro_icons/github.png" alt="GitHub" class="contact-icons"></a> | <a href="https://twitter.com/{{ site.author.twitter }}"><img src="/assets/images/somicro_icons/twitter.png" alt="Twitter" class="contact-icons"></a></p>
+      </div>
+      <div class="sidebar-module">
+        <h3>Other Posts</h3>
+        {% for post in site.posts %}
+        <p><a href="{{ post.url }}">{{ post.date | date_to_string }} » {{ post.title }}</a></p>
+        {% endfor %}
+      </div>
+
+    </div><!-- /.blog-sidebar -->
+
+</div><!-- /.row -->
