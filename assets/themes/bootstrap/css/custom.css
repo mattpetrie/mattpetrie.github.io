@@ -24,12 +24,15 @@ a:hover {
 
 pre {
 	background-color: #333;
+	color: #eee;
 	border: 1px solid #444;
 }
 
 code {
 	font-family: 'Source Code Pro', monospace;
 	font-weight: 600;
+	color: #eee;
+	background-color: #333;
 }
 
 .lead {
