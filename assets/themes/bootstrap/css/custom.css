@@ -150,8 +150,21 @@ footer {
 	bottom: 0;
 }
 
+@media (min-width: 768px) {
+	.blog-sidebar {
+		position: fixed;
+		margin-left: 65%;
+		max-width: 263px;
+	}
+}
+
 @media (max-width: 767px) {
 	.blog-nav-item {
 		font-size: 12px;
+	}
+
+	.blog-sidebar { 
+		position: relative;
+		margin-left: 0;
 	}
 }
