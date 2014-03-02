@@ -43,13 +43,13 @@ However, Jekyll's own documentation doesn't explain the setup for Pygments adequ
 
 	$ pygmentize -S default -f html > pygments.css
 
-Enable Pygments by making sure you have `pygments: true` in the _config.yml file in the root directory for your site (this is the default parameter when using Jekyll-Bootstrap-3). Lastly, include the pygments.css file by adding the following to the head of your template file (usually /_includes/themes/theme-name/default.html):
+Enable Pygments by making sure you have `pygments: true` in the /_config.yml file in the root directory for your site (this is the default parameter when using Jekyll-Bootstrap-3). Lastly, include the pygments.css file by adding the following to the head of your template file (usually /_includes/themes/theme-name/default.html):
 {% highlight html %}
 <link rel="stylesheet" href="/pygments.css">
 {% endhighlight %}
 Information about how to use Pygments in your markdown can be found [here](http://jekyllrb.com/docs/posts/). There are also several color themes that can replace the default Pygments theme simply by replacing the default pygments.css file. I'm using the Solarized Dark theme that I found [here](https://gist.github.com/nicolashery/5765395).
 
 ###Spruce Up Your Site with Custom HTML and CSS
-The last step is to make your site your own by tweaking Bootstrap's default colors and layout by adding your own custom css file ot the head of your page template. I pretty much rolled my own index.html page for my site, but for my blog pages, I borrowed heavily from Bootstrap's own [blog template](http://http://getbootstrap.com/examples/blog/).
+The last step is to make your site your own by tweaking Bootstrap's default colors and layout by adding your own custom css file to the head of your page template. I pretty much rolled my own index.html page for my site, but for my blog pages, I borrowed heavily from Bootstrap's own [blog template](http://http://getbootstrap.com/examples/blog/).
 
 That's it! If you're like me you might spend hours getting the design of your site just right, but following these instructions you can have at least a basic version of your own site running in practically no time. Happy blogging!
