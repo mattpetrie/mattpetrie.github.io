@@ -16,7 +16,7 @@
     <div class="col-md-4 col-md-offset-1" id="front-blog">
       <h3><a href="/blog/">blog</a></h3>
         {% for post in site.posts limit:5 %}
-        <p><a href="{{ post.url }}">{{ post.date | date_to_string }} » {{ post.title }}</a></p>
+        <p><a href="{{ post.url }}">{{ post.date | date_to_string }} » {{ post.title }}<br>{{ post.tagline }}</a></p>
         {% endfor %}
     </div>
   </div>
