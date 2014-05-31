@@ -9,16 +9,12 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-  	background-color: #eee;
-  	color: #333;
-}
-
-a { 
-/*	color: #B7976F;	*/
+  background-color: #eee;
+	background-image: url('/assets/images/squairy_light.png');
+  color: #333;
 }
 
 a:hover {
-/*	color: #65A687;*/
 	text-decoration: none;
 }
 
@@ -57,6 +53,10 @@ p {
 .hello {
 	font-size: 400%;
 	color: #333;
+}
+
+.highlight{
+	border-radius: 4px;
 }
 
 .contact-icons {
@@ -122,23 +122,23 @@ p {
 }
 
 .pagination li a{
-	background-color: #333;
-	color: #eee;
+	background-color: transparent;
+	color: #333;
 	border: none;
 }
 
 .pagination li a:hover {
-	background-color: #666;
-	color: #fff;
+	background-color: transparent;
+	color: #2a6496;
 }
 
 .pagination .disabled a{
-	background-color: #333;
+	background-color: transparent;
 	color: #666;
 }
 
 .pagination .disabled a:hover{
-	background-color: #333;
+	background-color: transparent;
 }
 
 .tag-list li {

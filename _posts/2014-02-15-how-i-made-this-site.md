@@ -43,7 +43,7 @@ However, Jekyll's own documentation doesn't explain the setup for Pygments adequ
 
 	$ pygmentize -S default -f html > pygments.css
 
-Enable Pygments by making sure you have `pygments: true` in the /_config.yml file in the root directory for your site (this is the default parameter when using Jekyll-Bootstrap-3). Lastly, include the pygments.css file by adding the following to the head of your template file (usually /_includes/themes/theme-name/default.html):
+Enable Pygments by making sure you have `highlighter: pygments` in the /_config.yml file in the root directory for your site (this is the default parameter when using Jekyll-Bootstrap-3). Lastly, include the pygments.css file by adding the following to the head of your template file (usually /_includes/themes/theme-name/default.html):
 {% highlight html %}
 <link rel="stylesheet" href="/pygments.css">
 {% endhighlight %}
