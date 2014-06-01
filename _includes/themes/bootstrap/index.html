@@ -3,11 +3,21 @@
     <div class="col-md-2 col-md-offset-2">
       <img src="/assets/images/portrait.jpg" alt="Matt Petrie" class="img-circle img-responsive center-block" id="portrait">
       <br />
-      <div class="icon-bar"><p class="text-center"><a href="matilto:{{ site.author.email}}"><img src="/assets/images/somicro_icons/email.png" alt="email" class="contact-icons"></a>|<a href="https://github.com/{{ site.author.github }}"><img src="/assets/images/somicro_icons/github.png" alt="GitHub" class="contact-icons"></a>|<a href="https://twitter.com/{{ site.author.twitter }}"><img src="/assets/images/somicro_icons/twitter.png" alt="Twitter" class="contact-icons"></a></p></div>
+      <div class="text-center" id="contact-button"><button class="btn btn-link">Contact</button></div>
     </div>
     <div class="col-md-6">
       <h1 class="hello">Hello.</h1>
-      <p class="lead">My name is Matt Petrie.<br /> I am a full-stack web developer based in San Francisco.</p>
+      <p class="lead">My name is Matt Petrie.<br /> I am a web developer based in San Francisco.</p>
+      <ul class="icon-bar">
+        <li><a href="mailto:{{ site.author.email}}"><button class="btn" id="email-button">Email</button></a>
+        </li>
+        <li>
+          <a href="https://github.com/{{ site.author.github }}" target="_blank"><button class="btn" id="github-button">Github</button></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><button class="btn" id="twitter-button">Twitter</button></a>
+        </li>
+      </ul>
 
     </div>
         

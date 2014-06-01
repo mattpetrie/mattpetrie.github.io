@@ -33,6 +33,7 @@ code {
 
 .lead {
 	font-weight: 400;
+	margin-bottom: 10px;
 }
 h1, h2, h3, h4 {
 	font-family: 'Source Code Pro', sans-serif;
@@ -51,6 +52,7 @@ p {
 }
 
 .hello {
+	margin-top: 40px;
 	font-size: 400%;
 	color: #333;
 }
@@ -59,13 +61,58 @@ p {
 	border-radius: 4px;
 }
 
+.icon-bar{
+	list-style: none;
+	padding-left: 0;
+}
+
+.icon-bar li{
+	margin-left: 0;
+	margin-right: 5px;
+	border-radius: 4px;
+	position: relative;
+	display: inline-block;
+	width: 150px;
+}
+
+.icon-bar li button{
+	width: 150px;
+	color: white;
+	background: transparent;
+	font-family: 'Source Code Pro', sans-serif;
+	display: none;
+}
+
+.icon-bar li button:hover{
+	opacity: .8;
+}
+
+.icon-bar li button:focus{
+	opacity: .8;
+}
+
+#email-button{
+	border: 3px solid #669c41;
+	color: #669c41;
+}
+
+#github-button{
+	border: 3px solid #666;
+	color: #666;
+}
+
+#twitter-button{
+	border: 3px solid #2daae1;
+	color: #2daae1;
+}
+
 .contact-icons {
-	opacity: 0.85;
+/*	opacity: 0.85;*/
 	padding: 0 5px;
 }
 
 .contact-icons:hover {
-	opacity: 1;
+/*	opacity: 1;*/
 }
 
 #front-blog h3 a {
@@ -146,6 +193,26 @@ p {
 	display: inline;
 	font-family: 'Source Code Pro', sans-serif;
 	font-size: 12px;
+}
+
+.btn-link{
+	border: 3px solid #666;
+	width: 150px;
+	border-radius: 4px;
+	color: #666;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.btn-link:hover{
+	border: 3px solid #999;
+	color: #999;
+	text-decoration: none;
+}
+
+.btn-link:focus{
+	border: 3px solid #999;
+	color: #999;
+	text-decoration: none;
 }
 
 /* Footer */
