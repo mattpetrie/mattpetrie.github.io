@@ -31,23 +31,15 @@
       <div class="container">
         <nav class="blog-nav">
           <a class="blog-nav-item" href="{{ HOME_PATH }}">Matt Petrie</a> |
+          <a href="#profile" class="blog-nav-item">about</a>
+          <a href="#portfolio" class="blog-nav-item">portfolio</a>
           <a class="blog-nav-item" href="/blog/">blog</a>
         </nav>
       </div>
     </div>
-
     <div class="container">
       {{ content }}
     </div>
-
-<!--       <footer>
-      <div class="container">
-        <p class="text-muted pull-right">
-          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
-        </p>
-      </div>  
-      </footer> -->
-
 
     {% include JB/analytics %}
     <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
