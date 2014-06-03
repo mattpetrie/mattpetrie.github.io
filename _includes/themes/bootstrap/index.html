@@ -1,109 +1,122 @@
-<section id="main-intro">
-  <div class="row">
-    <div class="col-md-2 col-md-offset-2">
-      <img src="/assets/images/portrait.jpg" alt="Matt Petrie" class="img-circle img-responsive center-block" id="portrait">
-      <br />
-      <div class="text-center" id="contact-button"><button class="btn btn-link">Contact</button></div>
-    </div>
-    <div class="col-md-6">
-      <h1 class="hello">Hello.</h1>
-      <p class="lead">My name is Matt Petrie.<br /> I am a web developer based in San Francisco.</p>
-      <ul class="icon-bar">
-        <li><a href="mailto:{{ site.author.email}}"><button class="btn" id="email-button">Email</button></a>
-        </li>
-        <li>
-          <a href="https://github.com/{{ site.author.github }}" target="_blank"><button class="btn" id="github-button">Github</button></a>
-        </li>
-        <li>
-          <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><button class="btn" id="twitter-button">Twitter</button></a>
-        </li>
-      </ul>
+<div id="main-nav">
+  <ul class="nav">
+    <li><a href="/">MATT PETRIE</a></li>
+    <li class="active"><a href="#top">top</a></li>
+    <li><a href="#profile">about</a></li>
+    <li><a href="#portfolio">portfolio</a></li>
+    <li><a href="/blog/">blog</a></li>
+  </ul>
+</div>
 
-    </div>       
-  </div>
-  <div class="row">
+<div class="container">
+  <section id="top">
+    <div class="row">
+      <div class="col-md-2 col-md-offset-2">
+        <img src="/assets/images/portrait.jpg" alt="Matt Petrie" class="img-circle img-responsive center-block" id="portrait">
+        <br />
+        <div class="text-center" id="contact-button"><button class="btn btn-link">Contact</button></div>
+      </div>
+      <div class="col-md-6">
+        <h1 class="hello">Hello.</h1>
+        <p class="lead">My name is Matt Petrie.<br /> I am a web developer for hire based in San Francisco.</p>
+        <ul class="icon-bar">
+          <li><a href="mailto:{{ site.author.email}}"><button class="btn" id="email-button">Email</button></a>
+          </li>
+          <li>
+            <a href="https://github.com/{{ site.author.github }}" target="_blank"><button class="btn" id="github-button">Github</button></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><button class="btn" id="twitter-button">Twitter</button></a>
+          </li>
+        </ul>
+
+      </div>       
+    </div>
+    <div class="row">
+      <div class="footer col-md-12">
+        <a href="#profile"><h4>&#8609; more about me &#8609;</h4></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1 class="section-head">I can't imagine anything more awesome than making things for the internet.</h1>
+        <p class="lead">Luckily, that's what I do. Front end, back end, I love the full stack from top to bottom. I like server-side code the same way I like my front end UI: clean, elegant and user friendly, and I'm ready to get my hands dirty working with both.</p>
+        <p>Some of the languages and technologies I work with are: <strong>Ruby on Rails, JavaScript, SQL, HTML5, CSS3, CoffeeScript, Sass, RSpec, Capybara, Backbone.js, Node.js, jQuery, Bootstrap, and Git.</strong> And I'm always looking to add new things to my bag of tricks. Next up: <strong>Angular.js.</strong></p>
+        <p>I'm all about code, but not <em>only</em> about code. Among other things, I've also been a writer, editor, wholesale sales manager, e-commerce expert, and wine educator.</p>
+      </div>
+    </div>
     <div class="footer col-md-12">
-      <a href="#profile"><h4>&#8609; more about me &#8609;</h4></a>
+      <a href="#portfolio"><h4>&#8609; view my porfolio &#8609;</h4></a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="profile">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h2 class="section-head">I really love to make things with code.</h2>
-      <p class="lead">Front end, back end, I love the full stack from top to bottom. The only thing I love more than seeing a project appear on the screen for the first time is making existing code even better.</p>
-      <p>I'm constantly looking to add new tools to my toolbox. Here are some of the languages and technologies I work with: <strong>Ruby on Rails, JavaScript, SQL, HTML5, CSS3, CoffeeScript, Sass, RSpec, Capybara, Backbone.js, Node.js, jQuery, Bootstrap, and Git.</strong></p>
+  <section id="portfolio">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Portfolio</h1>
+      </div>
     </div>
-  </div>
-  <div class="footer col-md-12">
-    <a href="#portfolio"><h4>&#8609; view my porfolio &#8609;</h4></a>
-  </div>
-</section>
-
-<section id="portfolio">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Portfolio</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <h4>Din Din</h4>
-      <div class="caption-group">
-        <img src="assets/images/dindin_screenshot.png" alt="dindin screenshot" class="img img-responsive img-thumbnail">
-        <div class="caption-panel">
-          <h4>Din Din</h4>
-          <p><a href="http://www.dindin.io" target="_blank">Web</a> | <a href="https://github.com/mattpetrie/dindin" target="_blank">Github</a></p>
-          <p>Recipe search application that helps you find recipes using ingredients you already have on hand. Backbone.js app with a Ruby on Rails back end, consuming a recipe search web API.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Din Din</h4>
+        <div class="caption-group">
+          <img src="assets/images/dindin_screenshot.png" alt="dindin screenshot" class="img img-responsive img-thumbnail">
+          <div class="caption-panel">
+            <h4>Din Din</h4>
+            <p><a href="http://www.dindin.io" target="_blank">Web</a> | <a href="https://github.com/mattpetrie/dindin" target="_blank">Github</a></p>
+            <p>Recipe search application that helps you find recipes using ingredients you already have on hand. Backbone.js app with a Ruby on Rails back end, consuming a recipe search web API.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h4>Reactive Record</h4>
+        <div class="caption-group">
+          <img src="assets/images/reactive_record.png" alt="reactive record screenshot" class="img img-responsive img-thumbnail">
+          <div class="caption-panel">
+            <h4>Reactive Record</h4>
+            <p><a href="https://github.com/mattpetrie/reactive_record" target="_blank">Github</a></p>
+            <p>Clone of ActiveRecord's ORM features. Mass assignment, querying, persistence, and association methods. Heavy use of Ruby metaprogramming.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h4>Snake</h4>
+        <div class="caption-group">
+          <img src="assets/images/snake.png" alt="snake game screenshot" class="img img-responsive img-thumbnail">
+          <div class="caption-panel">
+            <h4>Snake</h4>
+            <p><a href="http://www.mattpetrie.io/snake" target="_blank">Web</a> | <a href="https://github.com/mattpetrie/snake" target="_blank">Github</a></p>
+            <p>In-browser version of the classic snake game built with JavaScript, jQuery, HTML, and CSS.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <h4>Reactive Record</h4>
-      <div class="caption-group">
-        <img src="assets/images/reactive_record.png" alt="reactive record screenshot" class="img img-responsive img-thumbnail">
-        <div class="caption-panel">
-          <h4>Reactive Record</h4>
-          <p><a href="https://github.com/mattpetrie/reactive_record" target="_blank">Github</a></p>
-          <p>Clone of ActiveRecord's ORM features. Mass assignment, querying, persistence, and association methods. Heavy use of Ruby metaprogramming.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Eponymous Design</h4>
+        <div class="caption-group">
+          <img src="assets/images/eponymous_design.png" alt="eponyous design screenshot" class="img img-responsive img-thumbnail">
+          <div class="caption-panel">
+            <h4>Eponymous Design</h4>
+            <p><a href="http://www.eponymousdesign.com" target="_blank">Web</a> | <a href="https://github.com/mattpetrie/eponymousdesign" target="_blank">Github</a></p>
+            <p>Static website I designed and built to advertise my freelance web design services.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <h4>Jamesbhouston.com</h4>
+        <div class="caption-group">
+          <img src="assets/images/jamesbhouston.png" alt="jamesbhouston.com screenshot" class="img img-responsive img-thumbnail">
+          <div class="caption-panel">
+            <h4>Jamesbhouston.com</h4>
+            <p><a href="http://www.jamesbhouston.com" target="_blank">Web</a></p>
+            <p>Static website I designed and built for James B. Houston Copywriting Services.</p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <h4>Snake</h4>
-      <div class="caption-group">
-        <img src="assets/images/snake.png" alt="snake game screenshot" class="img img-responsive img-thumbnail">
-        <div class="caption-panel">
-          <h4>Snake</h4>
-          <p><a href="http://www.mattpetrie.io/snake" target="_blank">Web</a> | <a href="https://github.com/mattpetrie/snake" target="_blank">Github</a></p>
-          <p>In-browser version of the classic snake game built with JavaScript, jQuery, HTML, and CSS.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">
-      <h4>Eponymous Design</h4>
-      <div class="caption-group">
-        <img src="assets/images/eponymous_design.png" alt="eponyous design screenshot" class="img img-responsive img-thumbnail">
-        <div class="caption-panel">
-          <h4>Eponymous Design</h4>
-          <p><a href="http://www.eponymousdesign.com" target="_blank">Web</a> | <a href="https://github.com/mattpetrie/eponymousdesign" target="_blank">Github</a></p>
-          <p>Static website I designed and built to advertise my freelance web design services.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <h4>Jamesbhouston.com</h4>
-      <div class="caption-group">
-        <img src="assets/images/jamesbhouston.png" alt="jamesbhouston.com screenshot" class="img img-responsive img-thumbnail">
-        <div class="caption-panel">
-          <h4>Jamesbhouston.com</h4>
-          <p><a href="http://www.jamesbhouston.com" target="_blank">Web</a></p>
-          <p>Static website I designed and built for James B. Houston Copywriting Services.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</div>

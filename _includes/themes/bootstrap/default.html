@@ -25,21 +25,9 @@
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#main-nav">
 
-    <div class="blog-masthead navbar-fixed-top">
-      <div class="container">
-        <nav class="blog-nav">
-          <a class="blog-nav-item" href="{{ HOME_PATH }}">Matt Petrie</a> |
-          <a href="#profile" class="blog-nav-item">about</a>
-          <a href="#portfolio" class="blog-nav-item">portfolio</a>
-          <a class="blog-nav-item" href="/blog/">blog</a>
-        </nav>
-      </div>
-    </div>
-    <div class="container">
-      {{ content }}
-    </div>
+    {{ content }}
 
     {% include JB/analytics %}
     <script src="{{ ASSET_PATH }}/resources/jquery/jquery.min.js"></script>
