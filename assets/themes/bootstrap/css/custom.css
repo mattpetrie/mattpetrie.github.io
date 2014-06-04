@@ -5,7 +5,7 @@ body, html{
 body {
 	margin-top: 40px;
 	margin-bottom: 20px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
   background-color: #eee;
@@ -31,10 +31,6 @@ section:first-of-type{
 	margin-top: 0;
 }
 
-.section-head{
-	margin-top: 130px;
-}
-
 a:hover {
 	text-decoration: none;
 }
@@ -53,26 +49,44 @@ code {
 }
 
 .lead {
+	text-align: center;
 	font-weight: 400;
 	margin-bottom: 10px;
 }
+
 h1, h2, h3, h4 {
-	font-family: 'Source Code Pro', sans-serif;
+	font-family: 'Lora', serif;
 	font-weight: 600;
 }
 
 p {
 	word-spacing: 0.1em
 }
-#top{
-	padding: 10% 15px 0;
+
+hr{
+	border-color: #999;
+	border-width: 2px;
+	margin: 5px auto;
+	width: 300px;
 }
 
-.hello {
-	margin-top: 34px;
-	font-size: 400%;
-	color: #333;
+#top{
+	padding: 10% 15px 0;
+	text-align: center;
+}
+
+#top h1, h3{
 	text-shadow: -2px 2px 0 #fff;
+}
+
+#top h1{
+	color: #1D1B42;
+	font-weight: 400;
+	font-size: 56px;
+}
+
+#top h3{
+	margin:; 0;
 }
 
 .footer{
@@ -80,28 +94,44 @@ p {
 	bottom: 0px;
 	text-align: center;
 }
-/*
-#profile{
-	margin-top: 50px;
-	background-color: rgba(0,0,0, .7);
-	color: #eee;
-	border-radius: 4px;
+
+#profile h1{
+	margin-top: 80px;
+	text-align: center;
+	font-weight: 400;
+	text-shadow: -2px 2px 0 #fff;
+	font-family: 'Lato', sans-serif;
 }
-*/
+
+#profile hr{
+	margin: 20px auto;
+	width: 100%;
+}
+
 #profile .footer{
 	bottom: -40px;
+}
+
+#profile strong{
+	color: #660000;
+	text-shadow: -1px 1px 0 #fff;
 }
 
 #portfolio{
 	margin-top: 100px;
 	margin-bottom: 25px;
-	background-image: url('/assets/images/squairy_light.png');
-	padding: 0 15px 15px 15px;
+	background-color: rgba(255,255,255,.2);
+	padding: 0 20px 20px;
 	border-radius: 4px;
+	border: 2px solid #eee;
+}
+
+#portfolio h1{
+	font-family: 'Lato', sans-serif;
 }
 
 .footer a{
-	color: #999;
+	color: #ccc;
 }
 
 .footer a:hover{
@@ -130,7 +160,7 @@ p {
 	width: 150px;
 	color: white;
 	background: transparent;
-	font-family: 'Source Code Pro', sans-serif;
+	font-family: 'Lora', sans-serif;
 	display: none;
 }
 
@@ -158,12 +188,12 @@ p {
 }
 
 .contact-icons {
-/*	opacity: 0.85;*/
+	opacity: 0.85;
 	padding: 0 5px;
 }
 
 .contact-icons:hover {
-/*	opacity: 1;*/
+	opacity: 1;
 }
 
 #front-blog h3 a {
@@ -191,7 +221,7 @@ p {
 	width: 100%;
 	height: 100%;
 	color: white;
-	padding: 20px;
+	padding: 10px 20px 20px;
 	text-align: center;
 	background-color: #333;
 	border-radius: 4px;
@@ -225,7 +255,7 @@ p {
   position: relative;
   display: block;
   padding: 5px 0 0;
-  font-family: 'Source Code Pro', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #333;
@@ -246,15 +276,16 @@ p {
 /* Blog Posts */
 
 .blog-post-meta {
-	font-family: 'Source Code Pro', sans-serif;
+	font-family: 'Lora', sans-serif;
 }
 
 .blog-main{
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
 }
 
 .blog-post-title a {
+	font-family: 'Lato', sans-serif;
 	color: #333;
 }
 
@@ -291,7 +322,7 @@ p {
 .tag-list li {
 	list-style-type: none;
 	display: inline;
-	font-family: 'Source Code Pro', sans-serif;
+	font-family: 'Lora', sans-serif;
 	font-size: 12px;
 }
 
@@ -300,7 +331,7 @@ p {
 	width: 150px;
 	border-radius: 4px;
 	color: #666;
-  font-family: 'Source Code Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .btn-link:hover{

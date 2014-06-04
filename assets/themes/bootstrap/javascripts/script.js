@@ -1,12 +1,13 @@
 $(function(){
+  var $win = $(window);
+
   $('#contact-button').click(function(event){
     event.preventDefault();
-    $('#email-button').fadeToggle(400);
-    $('#github-button').fadeToggle(600);
-    $('#twitter-button').fadeToggle(800);
+    $(event.target).fadeOut().delay(10300).fadeIn();
+    setTimeout(toggleButtons, 500);
+    setTimeout(toggleButtons, 10000);
   });
 
-  var $win = $(window);
   var $li = $('.nav li').first();
   $win.scroll(function(){
     if($win.scrollTop() > 100){
@@ -29,3 +30,9 @@ $(function(){
     }
   });
 });
+
+function toggleButtons(){
+  $('#github-button').fadeToggle()
+  $('#email-button').delay(200).fadeToggle()
+  $('#twitter-button').delay(400).fadeToggle();
+}
