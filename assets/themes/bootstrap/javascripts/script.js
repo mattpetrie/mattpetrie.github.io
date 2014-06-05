@@ -3,8 +3,8 @@ $(function(){
 
   $('#contact-button').click(function(event){
     event.preventDefault();
-    $(event.target).fadeOut().delay(10300).fadeIn();
-    setTimeout(toggleButtons, 500);
+    $(event.target).hide().delay(11000).fadeIn();
+    toggleButtons();
     setTimeout(toggleButtons, 10000);
   });
 
@@ -32,7 +32,7 @@ $(function(){
 });
 
 function toggleButtons(){
-  $('#github-button').fadeToggle()
-  $('#email-button').delay(200).fadeToggle()
+  $('#email-button').fadeToggle()
+  $('#github-button').delay(200).fadeToggle()
   $('#twitter-button').delay(400).fadeToggle();
 }
