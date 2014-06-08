@@ -65,7 +65,7 @@ p {
 hr{
 	border-color: #999;
 	border-width: 2px;
-	margin: 5px auto;
+	margin: 0 auto 5px;
 	width: 300px;
 }
 
@@ -82,10 +82,12 @@ hr{
 	color: #37356E;
 	font-weight: 400;
 	font-size: 56px;
+	margin-bottom: 0;
 }
 
 #top h3{
 	margin: 0 auto;
+	font-family: 'Lato';
 }
 
 .footer{
@@ -127,7 +129,6 @@ hr{
 	background-color: rgba(255,255,255,.2);
 	padding: 0 20px 20px;
 	border-radius: 4px;
-	border: 2px solid #eee;
 }
 
 #portfolio h1{
