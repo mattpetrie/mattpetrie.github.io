@@ -1,12 +1,20 @@
 <div id="main-nav">
-  <ul class="nav">
-    <li><a href="/">MATT PETRIE</a></li>
-    <li class="active"><a href="#top">top</a></li>
-    <li><a href="#profile">about</a></li>
-    <li><a href="#portfolio">portfolio</a></li>
-    <li><a href="/blog/">blog</a></li>
-    <li><a href="mailto:matthew.petrie@gmail.com" target="_blank">contact</a></li>
-  </ul>
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar-collapse-1">
+    <ul class="nav">
+      <li><a href="/">MATT PETRIE</a></li>
+      <li class="active"><a href="#top">top</a></li>
+      <li><a href="#profile">about</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="/blog/">blog</a></li>
+      <li><a href="mailto:matthew.petrie@gmail.com" target="_blank">contact</a></li>
+    </ul>
+  </div>
 </div>
 
 <div class="container">
@@ -18,7 +26,7 @@
         <h3>Web Developer for Hire</h3>
         <p>San Francisco, CA</p>
         <div class="text-center"><button class="btn btn-link" id="contact-button">Contact</button></div>
-        <ul class="icon-bar">
+        <ul class="contact-buttons">
           <li>
             <a href="https://github.com/{{ site.author.github }}" target="_blank"><button class="btn" id="github-button">Github</button></a>
           </li>

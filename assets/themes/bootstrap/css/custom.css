@@ -147,12 +147,12 @@ hr{
 	border-radius: 4px;
 }
 
-.icon-bar{
+.contact-buttons{
 	list-style: none;
 	padding-left: 0;
 }
 
-.icon-bar li{
+.contact-buttons li{
 	margin-left: 0;
 	margin-right: 5px;
 	border-radius: 4px;
@@ -161,7 +161,7 @@ hr{
 	width: 150px;
 }
 
-.icon-bar li button{
+.contact-buttons li button{
 	width: 150px;
 	color: white;
 	background: transparent;
@@ -169,11 +169,11 @@ hr{
 	display: none;
 }
 
-.icon-bar li button:hover{
+.contact-buttons li button:hover{
 	opacity: .7;
 }
 
-.icon-bar li button:focus{
+.contact-buttons li button:focus{
 	opacity: .7;
 }
 
@@ -371,7 +371,7 @@ hr{
 		/*background: url('/assets/images/squairy_light.png');*/
 		background-image: none;
 		background-color: #eee;
-		padding: 0 0 0 80px;
+		padding: 0 0 0 40px;
 	}
 
 	.nav li a{
@@ -386,4 +386,41 @@ hr{
 		position: relative;
 		margin-left: 0;
 	}
+
+	.caption-panel{
+		padding-top: 50px;
+	}
+
+	.caption-panel p:nth-of-type(2){
+		display: none;
+	}
+
+	#main-nav{
+		background-color: #eee;
+	}
+
+	#main-nav button{
+		position: fixed;
+		background-color: rgba(255,255,255, .5);
+	}
+
+	#main-nav button:focus{
+		border: none;
+	}
+
+	ul.nav{
+		position: fixed;
+		top: 60px;
+		left: 15px;
+		background-color: rgba(255,255,255, .5);
+		padding: 3px;
+		min-width: 80px;
+		border-radius: 4px;
+	}
+
+	.icon-bar{
+		background-color: #555;
+	}
+
+
 }
