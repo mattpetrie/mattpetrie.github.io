@@ -45,4 +45,10 @@ $(function(){
       flipped = false;
     }
   }
+
+  $('#portfolio-link').click(function(){
+    event.preventDefault();
+    $('#intro').fadeOut();
+    $('#portfolio').delay(600).fadeIn('slow');
+  });
 })

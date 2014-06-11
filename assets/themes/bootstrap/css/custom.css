@@ -94,3 +94,7 @@ body{
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);
 }
+
+#portfolio{
+	display: none;
+}
