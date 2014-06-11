@@ -31,7 +31,7 @@ $(function(){
   });
 
   words3 = ["dynamic", "purposeful", "impactful", "efficient", 
-    "effective", "adaptable", "spectacular", "interactive", "beautiful"]
+    "effective", "innovative", "adaptable", "spectacular", "interactive", "beautiful"]
   function swapAdjective(){
     var $span = $('#adjective-inner p')
     $span.fadeOut()

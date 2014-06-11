@@ -67,6 +67,10 @@ h1, h2, h3{
 	color: #A34349;
 }
 
+#things{
+  float: right;
+}
+
 .rotator{
 	float:left;
 	font-size: inherit;
@@ -276,5 +280,16 @@ code {
   .blog-sidebar { 
     position: relative;
     margin-left: 0;
+  }
+  #adjective{
+  position: relative;
+  width: 290px;
+  height: 64px;
+  display: block;
+  float: none;
+  }
+
+  #things{
+    float: none;
   }
 }
