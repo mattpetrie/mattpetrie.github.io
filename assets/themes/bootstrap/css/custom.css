@@ -5,6 +5,10 @@ body{
 	color: #aaa;
 }
 
+h1, h2, h3{
+	font-family: 'Muli', inherit, sans-serif;
+}
+
 #name{
 	font-size: 28px;
 	margin-top: 8%;
@@ -29,12 +33,12 @@ body{
 	line-height: 115%;
 }
 
-#links p a{
+#links p a, #intro-link {
 	text-decoration: underline;
 	color: #aaa;
 }
 
-#links p a:hover{
+#links p a:hover, #intro-link:hover{
 	color: #428bca;
 }
 
@@ -97,4 +101,55 @@ body{
 
 #portfolio{
 	display: none;
+}
+
+#portfolio h1, #portfolio h3{
+	font-family: 'Muli', inherit, sans-serif;
+	font-weight: 300;
+}
+
+.caption-group{
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.caption-group:hover img{
+	-webkit-filter: grayscale(100%);
+}
+
+.caption-panel{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	padding: 10px 20px 20px;
+	text-align: center;
+	background-color: #333;
+	border-radius: 4px;
+	opacity: 0;
+	-webkit-opacity: 0;
+	transition: .5s all ease-in-out;
+	-webkit-transition: .5s all ease-in-out;
+	backface-visibility: hidden;
+}
+
+.caption-panel:hover{
+	opacity: 1;
+	-webkit-opacity: 1;
+	transform: translate(15px, 15px);
+	-webkit-transform: translate(15px, 15px);
+}
+
+.blog-post{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.blog-post-title a{
+	color: #aaa;
+}
+
+.blog-post p{
+	font-size: 16px;
 }

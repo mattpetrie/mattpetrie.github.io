@@ -33,14 +33,16 @@ $(function(){
   setInterval(toggleFlip, 5000);
 
   var flipped = false
-  var words = ["Ruby on Rails", "Backbone.js", "Bootstrap", "HTML5", "CSS3", "RSpec", "Capybara", "JavaScript", "Sass", "Node.js"]
+  var words1 = ["Ruby on Rails", "JavaScript", "jQuery", "SQL", "HTML5", "CSS3"] 
+  var words2 = ["Backbone.js", "RSpec", "Capybara", "Sass", "Node.js", "CoffeeScript", "Git"]
   function toggleFlip(){
     $('.rotator-inner').toggleClass('flip');
-    var text = words[Math.floor(Math.random() * words.length)];
     if(flipped === false){
+       var text = words2[Math.floor(Math.random() * words2.length)];
       $('.back p').html(text);
       flipped = true;
     } else {
+      var text = words1[Math.floor(Math.random() * words1.length)];
       $('.front p').html(text);
       flipped = false;
     }
@@ -50,5 +52,11 @@ $(function(){
     event.preventDefault();
     $('#intro').fadeOut();
     $('#portfolio').delay(600).fadeIn('slow');
+  });
+
+  $('#intro-link').click(function(){
+    event.preventDefault();
+    $('#portfolio').fadeOut();
+    $('#intro').delay(600).fadeIn('slow');
   });
 })
