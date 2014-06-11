@@ -31,6 +31,7 @@
 // });
 $(function(){
   setInterval(toggleFlip, 5000);
+  setInterval(swapAdjective, 8000)
 
   var flipped = false
   var words1 = ["Ruby on Rails", "JavaScript", "jQuery", "SQL", "HTML5", "CSS3"] 
@@ -59,4 +60,15 @@ $(function(){
     $('#portfolio').fadeOut();
     $('#intro').delay(600).fadeIn('slow');
   });
+
+  words3 = ["dynamic", "purposeful", "impactful", "efficient", 
+    "effective", "adaptable", "spectacular", "interactive", "beautiful"]
+  function swapAdjective(){
+    var $span = $('#adjective-inner p')
+    $span.fadeOut()
+    var text = words3[Math.floor(Math.random() * words3.length)];
+    setTimeout(function(){
+      $span.html(text).fadeIn();
+    }, 600);
+  }
 })

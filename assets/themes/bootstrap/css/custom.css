@@ -16,11 +16,30 @@ h1, h2, h3{
 	font-weight: 300;
 }
 
-#splash p{
+#splash p, #adjective-inner{
 	font-size: 54px;
 	font-weight: 300;
 	margin: 0;
 	line-height: 115%;
+}
+
+#adjective{
+	position: relative;
+	width: 290px;
+	height: 64px;
+	display: inline-block;
+	float: left;
+}
+
+#adjective-inner{
+	width: 100%;
+	text-align: center;
+	display: block;
+	color: #A34349;
+}
+
+#adjective-wrapper{
+	width: 705px;
 }
 
 #links{
@@ -133,6 +152,19 @@ h1, h2, h3{
   font-size: 12px;
 }
 
+pre {
+	background-color: #333;
+	color: #eee;
+	border: 1px solid #444;
+}
+
+code {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 600;
+	color: #eee;
+	background-color: #333;
+}
+
 @media (min-width: 768px) {
   .blog-sidebar {
     position: fixed;
@@ -147,7 +179,7 @@ h1, h2, h3{
     margin-left: 0;
   }
 }
-tfolio h1, #portfolio h3{
+#portfolio h1, #portfolio h3{
 	font-family: 'Muli', inherit, sans-serif;
 	font-weight: 300;
 }
@@ -205,6 +237,11 @@ tfolio h1, #portfolio h3{
 
 .contact-icons:hover {
   opacity: 1;
+}
+
+.pagination li a{
+	background: transparent;
+	border: none;
 }
 
 .pagination li a:hover {
