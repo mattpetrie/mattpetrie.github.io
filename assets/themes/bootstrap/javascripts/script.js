@@ -1,38 +1,43 @@
 $(function(){
-  var $win = $(window);
+  setInterval(toggleFlip, 5000);
+  setInterval(swapAdjective, 8000)
 
-  $('#contact-button').click(function(event){
-    event.preventDefault();
-    $(event.target).hide().delay(11000).fadeIn();
-    toggleButtons();
-    setTimeout(toggleButtons, 10000);
-  });
-
-  var $li = $('.nav li').first();
-  $win.scroll(function(){
-    if($win.scrollTop() > 100){
-      $li.fadeIn();
+  var flipped = false
+  var words1 = ["Ruby on Rails", "JavaScript", "jQuery", "SQL", "HTML5", "CSS3"] 
+  var words2 = ["Backbone.js", "RSpec", "Capybara", "Sass", "Node.js", "CoffeeScript", "Git"]
+  function toggleFlip(){
+    $('.rotator-inner').toggleClass('flip');
+    if(flipped === false){
+       var text = words2[Math.floor(Math.random() * words2.length)];
+      $('.back p').html(text);
+      flipped = true;
     } else {
-      $li.fadeOut();
+      var text = words1[Math.floor(Math.random() * words1.length)];
+      $('.front p').html(text);
+      flipped = false;
     }
+  }
+
+  $('#portfolio-link').click(function(){
+    event.preventDefault();
+    $('#intro').fadeOut();
+    $('#portfolio').delay(600).fadeIn('slow');
   });
 
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
+  $('#intro-link').click(function(){
+    event.preventDefault();
+    $('#portfolio').fadeOut();
+    $('#intro').delay(600).fadeIn('slow');
   });
-});
 
-function toggleButtons(){
-  $('#email-button').fadeToggle()
-  $('#github-button').delay(200).fadeToggle()
-  $('#twitter-button').delay(400).fadeToggle();
-}
+  words3 = ["dynamic", "purposeful", "impactful", "efficient", 
+    "effective", "adaptable", "spectacular", "interactive", "beautiful"]
+  function swapAdjective(){
+    var $span = $('#adjective-inner p')
+    $span.fadeOut()
+    var text = words3[Math.floor(Math.random() * words3.length)];
+    setTimeout(function(){
+      $span.html(text).fadeIn();
+    }, 600);
+  }
+})

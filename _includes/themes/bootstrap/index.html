@@ -1,72 +1,42 @@
-<div id="main-nav">
-  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
-    <span class="sr-only">Toggle navigation</span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbar-collapse-1">
-    <ul class="nav">
-      <li><a href="/">MATT PETRIE</a></li>
-      <li class="active"><a href="#top">top</a></li>
-      <li><a href="#profile">about</a></li>
-      <li><a href="#portfolio">portfolio</a></li>
-      <li><a href="/blog/">blog</a></li>
-      <li><a href="mailto:matthew.petrie@gmail.com" target="_blank">contact</a></li>
-    </ul>
+<section id="intro">
+  <div class="row">
+    <div class="col-sm-7 col-sm-offset-2" id="name">
+      Matt Petrie
+    </div>
+    <div class="col-sm-8 col-sm-offset-2" id="splash">
+      <p>I am a <span class="special">web developer.</span>
+      <p class="pull-left">I love to use&nbsp;</p>
+      <div class="rotator">
+        <div class="rotator-inner">
+          <div class="front">
+            <p>JavaScript</p>
+          </div>
+          <div class="back">
+            <p>Ruby on Rails</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div id="adjective-wrapper"><p class="pull-left">to make&nbsp;</p><div id="adjective"><div id="adjective-inner"><p>spectacular</p></div>
+      <div class="clearfix"></div>
+      </div><p class="pull-right">&nbsp;things.</p></div>
+    </div>
   </div>
-</div>
 
-<div class="container">
-  <section id="top">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Matt Petrie</h1>
-        <hr>
-        <h3>Web Developer for Hire</h3>
-        <p>San Francisco, CA</p>
-        <div class="text-center"><button class="btn btn-link" id="contact-button">Contact</button></div>
-        <ul class="contact-buttons">
-          <li>
-            <a href="https://github.com/{{ site.author.github }}" target="_blank"><button class="btn" id="github-button">Github</button></a>
-          </li>
-          <li>
-            <a href="mailto:{{ site.author.email}}"><button class="btn" id="email-button">Email</button></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><button class="btn" id="twitter-button">Twitter</button></a>
-          </li>
-        </ul>   
-      </div>   
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2" id="links">
+      <p>If you like my <a href="#portfolio" id="portfolio-link">work</a>, please get in <a href="mailto:matthew.petrie@gmail.com" target="_blank">touch.</a></p>
+      <p>You can also read my <a href="{{root_path}}/blog">blog.</a></p>
     </div>
-    <div class="row">
-      <div class="footer col-md-12">
-        <a href="#profile"><h4>&#8609; more about me &#8609;</h4></a>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section id="profile">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h1>I can't imagine anything more awesome than making things for the internet.</h1>
-        <hr>
-        <p class="lead">Luckily, that's what I do.</p>
-        <hr>
-        <p>Front end, back end, I love the full stack from top to bottom. I like server-side code the same way I like my front end UI: clean, elegant and user friendly, and I'm ready to get my hands dirty working with both.</p>
-        <p>Some of the languages and technologies I work with are: <strong>Ruby on Rails, JavaScript, SQL, HTML5, CSS3, CoffeeScript, Sass, RSpec, Capybara, Backbone.js, Node.js, jQuery, Bootstrap, and Git.</strong> And I'm always looking to add new things to my bag of tricks. Next up: <strong>Angular.js.</strong></p>
-        <p>I'm all about code, but not <em>only</em> about code. Among other things, I've also been a writer, editor, wholesale sales manager, e-commerce expert, and wine educator.</p>
-      </div>
-    </div>
-    <div class="footer">
-      <a href="#portfolio"><h4>&#8609; view my porfolio &#8609;</h4></a>
-    </div>
-  </section>
-
-  <section id="portfolio">
+<section id="portfolio">
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
         <h1>Portfolio</h1>
+        <h3><a href="#intro" id="intro-link">back to main page</a></h3>
       </div>
     </div>
     <div class="row">
@@ -128,5 +98,5 @@
         </div>
       </div>
     </div>
-  </section>
-</div>
+  </div>
+</section>
