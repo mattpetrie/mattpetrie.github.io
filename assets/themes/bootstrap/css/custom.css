@@ -1,8 +1,13 @@
 body{
 	height: 100%;
+  width: 100%;
 	background-color: #eee;
 	font-family: 'Muli', inherit, sans-serif;
 	color: #aaa;
+}
+
+.row{
+  width: 100%;
 }
 
 h1, h2, h3{
@@ -25,6 +30,10 @@ h1, h2, h3{
 
 #adjective-wrapper{
   width: 705px;
+}
+
+#adjective-wrapper p{
+  float: left;
 }
 
 #adjective{
@@ -59,6 +68,10 @@ h1, h2, h3{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #eee;
+}
+
+#adj-front p, #adj-back p{
+  width: 100%;
 }
 
 #adj-back{
@@ -271,17 +284,22 @@ code {
     position: relative;
     margin-left: 0;
   }
+
+  #adjective-wrapper p{
+    float: none;
+    display: block;
+  }
+
   #adjective{
-  position: relative;
-  width: 290px;
-  height: 64px;
-  display: block;
-  float: none;
+    position: relative;
+    width: 290px;
+    display: block;
+    float: none;
   }
 
   #things{
     float: none;
     display: block;
-    margin-top: 64px !important;
+/*    margin-top: 64px !important;*/
   }
 }

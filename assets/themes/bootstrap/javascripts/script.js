@@ -1,4 +1,17 @@
 $(function(){
+
+  if(window.location.hash == "#portfolio"){
+    $('#intro').hide();
+    showPortfolio();
+  }
+
+  window.onhashchange = function(){
+    if (window.location.hash == "#portfolio"){
+      showPortfolio();
+    } else {
+      showIntro();
+    }
+  }
   setInterval(swapTech, 6000);
   setTimeout(function(){
     setInterval(swapAdjective, 6000)
@@ -36,13 +49,20 @@ $(function(){
   }
 
   $('#portfolio-link').click(function(){
-    $('#intro').fadeOut();
-    $('#portfolio').delay(600).fadeIn('slow');
+    showPortfolio();
   });
 
   $('#intro-link').click(function(){
-    $('#portfolio').fadeOut();
-    $('#intro').delay(600).fadeIn('slow');
+    showIntro();
   });
 
+  function showPortfolio(){
+    $('#intro').fadeOut();
+    $('#portfolio').delay(600).fadeIn('slow');
+  }
+
+  function showIntro(){
+    $('#portfolio').fadeOut();
+    $('#intro').delay(600).fadeIn('slow');
+  }
 })
