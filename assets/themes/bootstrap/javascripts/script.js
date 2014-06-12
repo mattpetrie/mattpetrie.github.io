@@ -41,7 +41,6 @@ $(function(){
   });
 
   $('#intro-link').click(function(){
-    event.preventDefault();
     $('#portfolio').fadeOut();
     $('#intro').delay(600).fadeIn('slow');
   });
