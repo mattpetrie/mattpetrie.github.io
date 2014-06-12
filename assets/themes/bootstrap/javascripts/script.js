@@ -1,12 +1,14 @@
 $(function(){
-  setInterval(toggleFlip, 5000);
-  setInterval(swapAdjective, 8000)
+  setInterval(swapTech, 6000);
+  setTimeout(function(){
+    setInterval(swapAdjective, 6000)
+  }, 3000);
 
   var flipped = false
   var words1 = ["Ruby on Rails", "JavaScript", "jQuery", "SQL", "HTML5", "CSS3"] 
   var words2 = ["Backbone.js", "RSpec", "Capybara", "Sass", "Node.js", "CoffeeScript", "Git"]
-  function toggleFlip(){
-    $('.rotator-inner').toggleClass('flip');
+  function swapTech(){
+    $('.rotator-inner').toggleClass('flipX');
     if(flipped === false){
        var text = words2[Math.floor(Math.random() * words2.length)];
       $('.back p').html(text);
@@ -18,8 +20,22 @@ $(function(){
     }
   }
 
+  words3 = ["dynamic", "useful", "impactful", "efficient", 
+    "effective", "innovative", "adaptable", "spectacular", "interactive", "beautiful"]
+  var adjFlipped = false
+  function swapAdjective(){
+    $("#adjective-inner").toggleClass('flipY');
+    var text = words3[Math.floor(Math.random() * words3.length)];
+    if(adjFlipped === false){
+      $('#adj-back p').html(text);
+      adjFlipped = true;
+    } else {
+      $('#adj-front p').html(text);
+      adjFlipped = false;
+    }
+  }
+
   $('#portfolio-link').click(function(){
-    event.preventDefault();
     $('#intro').fadeOut();
     $('#portfolio').delay(600).fadeIn('slow');
   });
@@ -30,14 +46,4 @@ $(function(){
     $('#intro').delay(600).fadeIn('slow');
   });
 
-  words3 = ["dynamic", "purposeful", "impactful", "efficient", 
-    "effective", "innovative", "adaptable", "spectacular", "interactive", "beautiful"]
-  function swapAdjective(){
-    var $span = $('#adjective-inner p')
-    $span.fadeOut()
-    var text = words3[Math.floor(Math.random() * words3.length)];
-    setTimeout(function(){
-      $span.html(text).fadeIn();
-    }, 600);
-  }
 })
