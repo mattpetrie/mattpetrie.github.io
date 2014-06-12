@@ -55,7 +55,7 @@ h1, h2, h3{
   position: absolute;
   left: 0;
   height: 60px;
-  width: 270px;
+  widows: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #eee;

@@ -20,9 +20,9 @@ $(function(){
     }
   }
 
+  var adjFlipped = false
   words3 = ["dynamic", "useful", "impactful", "efficient", 
     "effective", "innovative", "adaptable", "spectacular", "interactive", "beautiful"]
-  var adjFlipped = false
   function swapAdjective(){
     $("#adjective-inner").toggleClass('flipY');
     var text = words3[Math.floor(Math.random() * words3.length)];
