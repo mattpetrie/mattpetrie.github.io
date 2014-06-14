@@ -1,6 +1,6 @@
     <div class="col-sm-7 col-sm-offset-1 blog-main">
 
-      <div class="blog-post">
+      <article class="blog-post">
         <h2 class="blog-post-title">{{ page.title }}<br/>{% if page.tagline %}<small> {{page.tagline}}</small>{% endif %}</h2>
         <p class="blog-post-meta">{{ page.date | date_to_long_string }}</p>
 
@@ -14,7 +14,7 @@
         </ul>
         {% endunless %}
 
-      </div><!-- /.blog-post -->
+      </article><!-- /.blog-post -->
 
       <hr>
     

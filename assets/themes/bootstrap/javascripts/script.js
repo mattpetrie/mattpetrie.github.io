@@ -34,7 +34,7 @@ $(function(){
   }
 
   var adjFlipped = false
-  words3 = ["dynamic", "useful", "impactful", "efficient", 
+  words3 = ["dynamic", "useful", "impactful", "efficient", "responsive",
     "effective", "innovative", "adaptable", "spectacular", "interactive", "beautiful"]
   function swapAdjective(){
     $("#adjective-inner").toggleClass('flipY');
