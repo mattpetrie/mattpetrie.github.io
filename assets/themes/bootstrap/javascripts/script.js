@@ -1,4 +1,6 @@
 $(function(){
+  var flipped, adjFlipped, words1, words2, words3, words1Counter, words2Counter,
+  words3Counter; 
 
   if(window.location.hash == "#portfolio"){
     $('#intro').hide();
@@ -17,11 +19,10 @@ $(function(){
     setInterval(swapAdjective, 6000);
   }, 3000);
 
-  var flipped = false;
-  var words1 = ["Ruby on Rails", "JavaScript", "jQuery", "SQL", "HTML5", "CSS3", "Grunt.js"]; 
-  var words2 = ["Backbone.js", "RSpec", "Capybara", "Sass", "Node.js", "Mocha", "CoffeeScript", "Git"];
-  var words1Counter = 0;
-  var words2Counter = 0;
+  flipped = false;
+  words1 = ["Ruby on Rails", "JavaScript", "jQuery", "SQL", "HTML5", "CSS3", "Grunt.js"]; 
+  words2 = ["Backbone.js", "RSpec", "Sass", "Node.js", "Mocha", "CoffeeScript", "Git"];
+  words1Counter = words2Counter = 0;
 
   function swapTech(){
     var text;
@@ -39,10 +40,10 @@ $(function(){
     }
   }
 
-  var adjFlipped = false;
+  adjFlipped = false;
   words3 = ["dynamic", "useful", "impactful", "efficient", "responsive",
     "effective", "innovative", "adaptable", "spectacular", "interactive", "beautiful"];
-  var words3Counter = 0;
+  words3Counter = 0;
 
   function swapAdjective(){
     $("#adjective-inner").toggleClass('flipY');
