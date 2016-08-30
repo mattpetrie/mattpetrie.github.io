@@ -23,21 +23,52 @@ html, body {
 }
 
 #description p a {
-  color: #2B2B2B;
-  text-decoration: none;
   border-bottom: 1px solid #2B2B2B;
-  transition: color 0.2s, border 0.2s ease-out;
-  -webkit-transition: color 0.2s, border 0.2s ease-out;
+  color: #2B2B2B;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+  -webkit-transition: color 0.3s ease-in;
+}
+
+#description p a:before {
+  background-color: #FFF0B3;
+  content: '';
+  height: 100%;
+  left: -4px;
+  opacity: 0.5;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+  z-index: -1;
+  transition: padding 0.2s, width 0.2s ease-in;
+  -webkit-transition: padding 0.2s, width 0.2s ease-in;
 }
 
 #description p a:hover {
-  color: #CCCCCC;
-  border-bottom: 1px solid #CCCCCC;
+  color: #000000;
+}
+
+#description p a:hover:before {
+  padding: 0 4px;
+  width: 100%;
 }
 
 .highlight {
+  position: relative;
+}
+
+.highlight:before {
   background-color: #B3F0FF;
-  padding: 2px;
+  content: '';
+  height: 100%;
+  left: -4px;
+  top: 0;
+  width: 100%;
+  padding: 0 4px;
+  position: absolute;
+  z-index: -1;
 }
 
 #name {
