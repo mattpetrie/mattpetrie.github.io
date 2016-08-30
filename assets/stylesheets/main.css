@@ -24,7 +24,6 @@ html, body {
 
 #description p a {
   color: #2B2B2B;
-  font-weight: bold;
   text-decoration: none;
   border-bottom: 1px solid #2B2B2B;
   transition: color 0.2s, border 0.2s ease-out;
@@ -34,6 +33,11 @@ html, body {
 #description p a:hover {
   color: #CCCCCC;
   border-bottom: 1px solid #CCCCCC;
+}
+
+.highlight {
+  background-color: #B3F0FF;
+  padding: 2px;
 }
 
 #name {
