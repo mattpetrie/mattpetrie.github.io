@@ -22,37 +22,59 @@ html, body {
   line-height: 56px;
 }
 
-#description p a {
-  border-bottom: 1px solid #2B2B2B;
+.link {
+  /* border-bottom: 1px solid #2B2B2B; */
   color: #2B2B2B;
   position: relative;
   text-decoration: none;
-  transition: color 0.3s ease-in;
-  -webkit-transition: color 0.3s ease-in;
 }
 
-#description p a:before {
+.link:before {
   background-color: #FFF0B3;
   content: '';
-  height: 100%;
-  left: -4px;
-  opacity: 0.5;
+  height: 66%;
+  left: 6px;
+  opacity: 0.8;
   padding: 0;
   position: absolute;
-  top: 0;
+  top: 10px;
+  transition: width 0.3s ease-in;
+  -webkit-transition: width 0.3s ease-in;
   width: 0;
   z-index: -1;
-  transition: padding 0.2s, width 0.2s ease-in;
-  -webkit-transition: padding 0.2s, width 0.2s ease-in;
 }
 
-#description p a:hover {
-  color: #000000;
+.link.pink:before {
+  background-color: #FFB3FF;
 }
 
-#description p a:hover:before {
-  padding: 0 4px;
+.link.green:before {
+  background-color: #B3FFB3;
+}
+
+.link:hover {
+  border-bottom: 1px solid transparent;
+}
+
+.link:after {
+  border-bottom: 1px solid #2B2B2B;
+  content: '';
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: width 0.3s ease-in;
+  -webkit-transition: width 0.3s ease-in;
   width: 100%;
+  z-index: -1;
+}
+
+.link:hover:before {
+  width: 100%;
+}
+
+.link:hover:after {
+  width: 0;
 }
 
 .highlight {
@@ -62,11 +84,10 @@ html, body {
 .highlight:before {
   background-color: #B3F0FF;
   content: '';
-  height: 100%;
-  left: -4px;
-  top: 0;
+  height: 66%;
+  left: 6px;
+  top: 10px;
   width: 100%;
-  padding: 0 4px;
   position: absolute;
   z-index: -1;
 }
