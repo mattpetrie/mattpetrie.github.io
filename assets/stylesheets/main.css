@@ -23,7 +23,8 @@ html, body {
 }
 
 .link {
-  /* border-bottom: 1px solid #2B2B2B; */
+  border-bottom: 1px solid #2B2B2B;
+  cursor: pointer;
   color: #2B2B2B;
   position: relative;
   text-decoration: none;
@@ -50,6 +51,10 @@ html, body {
 
 .link.green:before {
   background-color: #B3FFB3;
+}
+
+.link.orange:before {
+  background-color: #FFCE8e
 }
 
 .link:hover {
@@ -119,7 +124,7 @@ html, body {
   }
 
   #description {
-    max-width: 600px;
+    max-width: 540px;
     padding-right: 20%;
     top: 16%;
   }
@@ -150,7 +155,7 @@ html, body {
 
   #description {
     left: 10%;
-    max-width: 600px;
+    max-width: 540px;
     padding-right: 20%;
     top: 16%;
   }
