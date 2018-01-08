@@ -1,10 +1,10 @@
 html, body {
-  background-color: #EDEDED;
-  color: #3A3A3A;
+  background:linear-gradient(135deg, #5b247a 0%,#1bcedf 100%);
+  color: #FFFFFF;
+  font-size: 36px;
   height: 100%;
   margin: 0;
   width: 100%;
-  border: 10px solid #FFFFFF;
   box-sizing: border-box;
 }
 
@@ -17,100 +17,26 @@ html, body {
 
 #description p {
   font-family: 'Source Code Pro', monospace;
-  font-size: 36px;
-  letter-spacing: 1px;
-  line-height: 56px;
+  font-size: 1rem;
+  letter-spacing: 0.055rem;
+  line-height: 1.55rem;
 }
 
 .link {
-  border-bottom: 1px solid #2B2B2B;
+  border-bottom: 1px solid #FFFFFF;
   cursor: pointer;
-  color: #2B2B2B;
+  color: #FFFFFF;
   position: relative;
   text-decoration: none;
-}
-
-.link:before {
-  background-color: #FFF0B3;
-  content: '';
-  height: 66%;
-  left: 6px;
-  opacity: 0.8;
-  padding: 0;
-  position: absolute;
-  top: 10px;
-  transition: width 0.3s ease-in;
-  -webkit-transition: width 0.3s ease-in;
-  width: 0;
-  z-index: -1;
-}
-
-.link.pink:before {
-  background-color: #FFB3FF;
-}
-
-.link.green:before {
-  background-color: #B3FFB3;
-}
-
-.link.orange:before {
-  background-color: #FFCE8e
-}
-
-.link:hover {
-  border-bottom: 1px solid transparent;
-}
-
-.link:after {
-  border-bottom: 1px solid #2B2B2B;
-  content: '';
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: width 0.3s ease-in;
-  -webkit-transition: width 0.3s ease-in;
-  width: 100%;
-  z-index: -1;
-}
-
-.link:hover:before {
-  width: 100%;
-}
-
-.link:hover:after {
-  width: 0;
-}
-
-.highlight {
-  position: relative;
-}
-
-.highlight:before {
-  background-color: #B3F0FF;
-  content: '';
-  height: 66%;
-  left: 6px;
-  top: 10px;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
+  box-sizing: content-box;
 }
 
 #name {
-  bottom: 16px;
-  right: 10px;
-  position: fixed;
-}
-
-#name h1 {
   color: #FFFFFF;
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Source Code Pro', monospace;
   font-weight: normal;
-  font-size: 30vw;
-  letter-spacing: 4px;
-  line-height: 24vw;
-  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 0.36rem;
 }
 
 
@@ -119,26 +45,14 @@ html, body {
   and (min-device-width: 1024px)
   and (min-width: 768px) {
 
-  #name {
-    bottom: 14px;
+  html, body {
+    font-size: 18px;
   }
 
   #description {
     max-width: 520px;
     padding-right: 20%;
     top: 16%;
-  }
-
-  #description p {
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    line-height: 32px;
-  }
-
-  #name h1 {
-    font-size: 200px;
-    letter-spacing: 4px;
-    line-height: 160px;
   }
 }
 
@@ -149,8 +63,8 @@ html, body {
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
 
-  #name {
-    bottom: 14px;
+  html, body {
+    font-size: 24px;
   }
 
   #description {
@@ -159,18 +73,6 @@ html, body {
     padding-right: 20%;
     top: 16%;
   }
-
-  #description p {
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    line-height: 32px;
-  }
-
-  #name h1 {
-    font-size: 200px;
-    letter-spacing: 4px;
-    line-height: 160px;
-  }
 }
 
 /* ----------- Smaller Browser Windows ----------- */
@@ -178,26 +80,14 @@ html, body {
   and (min-device-width: 1024px)
   and (max-width: 767px) {
 
-  #name {
-    bottom: 13px;
+  html, body {
+    font-size: 14px;
   }
 
   #description {
     max-width: 400px;
     position: fixed;
     top: 16%;
-  }
-
-  #description p {
-    font-size: 14px;
-    letter-spacing: 0.4px;
-    line-height: 28px;
-  }
-
-  #name h1 {
-    font-size: 24vw;
-    letter-spacing: 4px;
-    line-height: 20vw;
   }
 }
 
@@ -208,19 +98,8 @@ html, body {
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
 
-  #name {
-    bottom: 10px;
-  }
-
-  #description p {
+  html, body {
     font-size: 24px;
-    line-height: 40px;
-  }
-
-  #name h1 {
-    font-size: 24vw;
-    letter-spacing: 4px;
-    line-height: 20vw;
   }
 }
 
@@ -231,19 +110,7 @@ html, body {
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 1) {
 
-  #name {
-    bottom: 16px;
-  }
-
-  #description p {
+  html, body {
     font-size: 18px;
-    letter-spacing: 0.5px;
-    line-height: 32px;
-  }
-
-  #name h1 {
-    font-size: 20vw;
-    letter-spacing: 4px;
-    line-height: 16vw;
   }
 }
