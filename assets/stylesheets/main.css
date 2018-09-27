@@ -60,7 +60,7 @@ html, body {
 #description {
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 20%;
+  padding-top: 20vh;
   z-index: 3;
 }
 
@@ -111,7 +111,6 @@ html, body {
   #description {
     max-width: 500px;
     padding-right: 20%;
-    padding-top: 16%;
   }
 }
 
@@ -130,7 +129,6 @@ html, body {
     padding-left: 10%;
     max-width: 520px;
     padding-right: 20%;
-    padding-top: 16%;
   }
 }
 
@@ -145,7 +143,7 @@ html, body {
 
   #description {
     max-width: 400px;
-    padding-top: 16%;
+    padding-top: 16vh;
   }
 }
 
@@ -183,7 +181,7 @@ and (max-width: 767px) {
 
   #description {
     max-width: 400px;
-    padding-top: 16%;
+    padding-top: 16vh;
     padding-bottom: 24px;
   }
 }
