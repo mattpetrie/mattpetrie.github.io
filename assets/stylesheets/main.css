@@ -49,12 +49,23 @@ html, body {
   background:linear-gradient(135deg, #7117ea 0%,#ea6060 100%);
 }
 
-#description {
-  left: 10%;
-  padding-right: 10%;
+#description-container {
   position: fixed;
-  top: 20%;
   z-index: 3;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+#description {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20%;
+  z-index: 3;
+}
+
+#intro {
+  max-width: 360px;
 }
 
 #description p {
@@ -100,7 +111,7 @@ html, body {
   #description {
     max-width: 500px;
     padding-right: 20%;
-    top: 16%;
+    padding-top: 16%;
   }
 }
 
@@ -116,10 +127,10 @@ html, body {
   }
 
   #description {
-    left: 10%;
+    padding-left: 10%;
     max-width: 520px;
     padding-right: 20%;
-    top: 16%;
+    padding-top: 16%;
   }
 }
 
@@ -134,8 +145,7 @@ html, body {
 
   #description {
     max-width: 400px;
-    position: fixed;
-    top: 16%;
+    padding-top: 16%;
   }
 }
 
@@ -160,5 +170,20 @@ html, body {
 
   html, body {
     font-size: 18px;
+  }
+}
+
+/* ----------- Phones ----------- */
+@media screen
+and (max-width: 767px) {
+
+  html, body {
+    font-size: 18px;
+  }
+
+  #description {
+    max-width: 400px;
+    padding-top: 16%;
+    padding-bottom: 24px;
   }
 }
