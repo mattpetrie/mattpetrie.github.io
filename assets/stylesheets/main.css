@@ -65,7 +65,7 @@ html, body {
 }
 
 #intro {
-  max-width: 360px;
+  max-width: 480px;
 }
 
 #description p {
@@ -109,7 +109,7 @@ html, body {
   }
 
   #description {
-    max-width: 500px;
+    max-width: 480px;
     padding-right: 20%;
   }
 }
@@ -127,7 +127,7 @@ html, body {
 
   #description {
     padding-left: 10%;
-    max-width: 520px;
+    max-width: 480px;
     padding-right: 20%;
   }
 }
